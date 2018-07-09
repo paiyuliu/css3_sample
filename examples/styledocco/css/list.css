@@ -1,0 +1,168 @@
+/*
+# 列表
+下面說明列表相關的內容。
+
+外部元素使用list類別，內部元素則使用list-item類別。
+
+## 普通列表
+
+    <ul class="list">
+		<li class="list-item list-main">title</li>
+	</ul>
+
+
+## 有箭頭的連結列表
+
+    <ul class="list">
+		<li class="list-wrap">
+			<a href="#" class="list-link list-item list-arrow list-main">Wi-Fi Settings</a>
+		</li>
+		<li class="list-wrap">
+			<a href="#" class="list-link list-item list-arrow list-main :hover">Wi-Fi Settings</a>
+		</li>
+	</ul>
+
+
+## 狀態列表
+
+    <ul class="list">
+		<li class="list-item">
+			<div class="list-main">
+				<p class="list-item-title">Wi-Fi</p>
+			</div>
+			<div class="list-value">ON</div>
+		</li>
+	</ul>
+
+
+## 圖示列表
+
+	<link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=fontawesome">
+    <ul class="list">
+		<li class="list-wrap">
+			<a href="#" class="list-link list-item list-arrow">
+				<div class="list-image fontawesome-ok"></div>
+				<div class="list-main">title</div>
+			</a>
+		</li>
+	</ul>
+
+
+## 縮圖列表
+
+    <ul class="list">
+		<li class="list-wrap">
+			<a href="#" class="list-link list-item list-arrow">
+				<div class="list-image"><img src="http://hara-css3.herokuapp.com/img/icon_bookmark.png" alt="bookmark" class="list-image-thumb"></div>
+				<div class="list-main">
+					<p class="list-item-title">title</p>
+					<p class="list-subtext">description</p>
+				</div>
+				<div class="list-value">value</div>
+			</a>
+		</li>
+	</ul>
+
+
+*/
+ /* common styles */
+.list {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  color: #333;
+  margin: 30px 0;
+}
+ /* list item */
+.list-item {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: -ms-box;
+  display: box;
+  min-height: 40px;
+  padding: 2px 8px;
+}
+.list-item:not(:last-child),
+.list-wrap:not(:last-child) .list-item {
+  border-bottom: 1px solid #ccc;
+}
+ /* list arrow */
+.list-arrow {
+  padding-right: 24px;
+  position: relative;
+}
+.list-arrow::after {
+  content: '';
+  border-right: 2px solid #ccc;
+  border-top: 2px solid #ccc;
+  display: inline-block;
+  height: 8px;
+  margin: -4px 0 0;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 8px;
+}
+ /* list link */
+.list-link {
+  color: #333;
+  text-decoration: none;
+}
+.list-link:hover {
+  background: #eee;
+}
+ /* list image */
+.list-image {
+  color: #6cf;
+  font-family: 'FontAwesome', sans-serif;
+  margin: 0 8px 0 0;
+  min-width: 40px;
+  text-align: center;
+}
+.list-image-thumb {
+  height: 60px;
+  padding: 4px 0;
+  vertical-align: middle;
+  width: 60px;
+}
+ /* list main */
+.list-main {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  -ms-box-flex: 1;
+  prop: 1;
+}
+ /* list title */
+.list-item-title {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+ /* list value */
+.list-value {
+  max-width: 5em;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+ /* sub text */
+.list-subtext {
+  color: #999;
+  font-size: 0.8em;
+}

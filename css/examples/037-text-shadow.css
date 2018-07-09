@@ -1,0 +1,57 @@
+#main {
+  font-family: sans-serif;
+}
+ 
+/* common styles */
+.box {
+  border: 1px solid #ccc;
+  height: 200px;
+  margin: 20px;
+  position: relative;
+  width: 300px;
+}
+ 
+.title {
+  font-size: 5em;
+  position: absolute;
+  line-height: 1;
+  margin-top: -0.5em;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+ 
+/* boxes */
+.box1 {
+  background-color: #3b3b3b;
+}
+ 
+.box1 .title {
+  color: #242424;
+  font-family: "league-gothic", sans-serif;
+  text-shadow: 0 1px 1px #4a4a4a;
+}
+ 
+.box2 {
+  background-color: #2c2c2c;
+}
+ 
+.box2 .title {
+  color: #444;
+  font-family: maven-pro, sans-serif;
+  font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.6), -1px -1px 1px rgba(255,255,255,0.4);
+}
+ 
+.box3 {
+  background-color: #333;
+}
+ 
+.box3 .title {
+  color: rgba(84,84,84,0.2);
+  font-family: gentium-basic, serif;
+  font-size: 3.2em;
+  text-shadow: 0 0 20px rgba(84,84,84,0.6), 0 0 10px rgba(84,84,84,0.6);
+}
+ 

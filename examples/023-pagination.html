@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>023-pagination | CSS3 Recipe Book</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/examples/023-pagination.css">
+  </head>
+  <body>
+    <header class="navi-bar">
+      <p class="navi-bar-back"><a href="/" onClick="history.back(); return false;">Back</a></p>
+      <p class="navi-bar-title"><a href="http://books.shoeisha.co.jp/book/b109516.html">CSS3功能索引式參考手冊</a></p>
+    </header>
+    <div id="main">
+      <ul class="pagination">
+      <li class="pagination-item-prev"><a href="#">Previous</a></li>
+      <li class="pagination-item"><a href="#">1</a></li>
+      <li class="pagination-item selected"><a href="#">2</a></li>
+      <li class="pagination-item"><a href="#">3</a></li>
+      <li class="pagination-item"><a href="#">4</a></li>
+      <li class="pagination-item-continue">...</li>
+      <li class="pagination-item"><a href="#">20</a></li>
+      <li class="pagination-item"><a href="#">21</a></li>
+      <li class="pagination-item-next"><a href="#">Next</a></li>
+      </ul></div>
+    <script src="../js/lib/jquery-1.10.2.min.js"></script><!-- load font -->
+    <script src="http://use.edgefonts.net/poiret-one.js"></script>
+  </body>
+</html>

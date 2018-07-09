@@ -1,0 +1,169 @@
+#main {
+  font-family: sans-serif;
+}
+ 
+/* box styles */
+.box-example {
+  margin: 10px 20px;
+}
+ 
+.box-square-basic {
+  background: #6cf;
+  height: 100px;
+  width: 100px;
+}
+ 
+.box-square-signal {
+  background: #f03;
+  height: 100px;
+  width: 100px;
+}
+ 
+.box-rectangle-basic {
+  background: #6cf;
+  height: 100px;
+  width: 150px;
+}
+ 
+.box-half-basic {
+  background: #6cf;
+  height: 50px;
+  width: 100px;
+}
+ 
+/* before/after */
+.before-after-quote {
+  color: #333;
+  padding: 0 2em;
+  position: relative;
+}
+ 
+.before-after-quote::before,
+.before-after-quote::after {
+  background: #ccc;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  color: #666;
+  font-weight: bold;
+  height: 1.5em;
+  line-height: 1.5;
+  position: absolute;
+  text-align: center;
+  width: 1.5em;
+}
+ 
+.before-after-quote::before {
+  content: "\201C";
+  left: 0;
+  top: 0;
+}
+ 
+.before-after-quote::after {
+  bottom: 0;
+  content: "\201D";
+  right: 0;
+}
+ 
+.before-after-number .item {
+  background: #6cf;
+  color: #fff;
+  counter-increment: number;
+  font-family: sans-serif;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+ 
+.before-after-number .item::before {
+  content: counter(number);
+  color: #33f;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0 1em 0 0;
+  max-width: 2em;
+  min-width: 1em;
+  text-align: right;
+}
+ 
+.before-after-number .item::after {
+  content: "(" attr(data-point) "pt)";
+  color: #efefef;
+  font-size: 0.7em;
+  margin: 0 0 0 0.5em;
+}
+ 
+.before-after-overlap {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  position: relative;
+}
+ 
+.before-after-overlap::before,
+.before-after-overlap::after {
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  content: '';
+  display: block;
+  height: 100px;
+  position: absolute;
+  width: 100px;
+  z-index: -1;
+}
+ 
+.before-after-overlap::before {
+  background: #ff0;
+  -webkit-transform: rotate(10deg);
+}
+ 
+.before-after-overlap::after {
+  background: #0f3;
+  -webkit-transform: rotate(-10deg);
+}
+ 
+.before-after-overlap-example {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: sans-serif;
+  padding: 0.3em;
+  position: relative;
+  text-shadow: 1px 1px #ccc;
+}
+ 
+.before-after-overlap-example::before,
+.before-after-overlap-example::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  height: 100px;
+  padding: 0.3em;
+  position: absolute;
+  text-shadow: 1px 1px #ccc;
+  width: 100px;
+}
+ 
+.before-after-overlap-example::before {
+  background: rgba(255,255,0,0.5);
+  content: 'Before';
+  left: 20%;
+  top: 25%;
+}
+ 
+.before-after-overlap-example::after {
+  background: rgba(0,255,51,0.5);
+  content: 'After';
+  left: 40%;
+  top: 50%;
+}
+ 
+/* for example */
+.box-example {
+  margin-bottom: 20px;
+}
+ 

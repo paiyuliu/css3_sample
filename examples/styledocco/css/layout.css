@@ -1,0 +1,34 @@
+/*
+# 版型及共用部分
+
+下面介紹版型及共用部分相關內容。
+
+## 區段標頭
+製作區段分隔
+製作區段分隔時附加heading類別。
+
+
+
+    <h1 class="heading">Section</button>
+
+
+## frame
+
+### frame-base
+保留20px的空白。
+
+
+	<div class="frame-base" style="border: 1px solid #ccc;">Content</div>
+
+
+*/
+
+.heading {
+	background: #333;
+	color: #fff;
+	padding: 4px 8px;
+}
+
+.frame-base {
+	padding: 20px;
+}

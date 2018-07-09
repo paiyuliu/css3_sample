@@ -1,0 +1,112 @@
+/*
+# 按鈕
+
+在按鈕上附加button類別。
+除button類別外，也可配合其他類別一起使用。
+
+## default
+*一般使用這個按鈕。
+
+
+	<button class="button-default button">default</button>
+	<button class="button-default button :hover">default</button>
+	<button class="button-default button" disabled>default</button>
+	<button class="button-default button-max button">default</button>
+
+
+## primary
+* 確認按鈕等操作的時候使用。
+
+
+	<button class="button-primary button">primary</button>
+	<button class="button-primary button :hover">primary</button>
+	<button class="button-primary button" disabled>primary</button>
+	<button class="button-primary button-max button">primary</button>
+
+
+
+
+## warning
+* 對使用者而言需警示時使用。針對刪除按鈕時使用。點擊按鈕後，跳出確認畫面。
+
+
+	<button class="button-warning button">warning</button>
+	<button class="button-warning button :hover">warning</button>
+	<button class="button-warning button" disabled>warning</button>
+	<button class="button-warning button-max button">warning</button>
+
+
+
+*/
+
+.button {
+    appearance: none;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.button[disabled] {
+    cursor: default;
+}
+
+.button-default {
+    background: #efefef;
+    border-radius: 4px;
+    color: #333;
+    padding: 6px 10px;
+    text-align: center;
+}
+
+.button-default:hover {
+    background: #d8d8d8;
+}
+
+.button-default[disabled],
+.button-default[disabled]:hover {
+    background: #efefef;
+    color: #666;
+    opacity: .8;
+}
+
+.button-primary {
+    background: #6cf;
+    border-radius: 4px;
+    color: #333;
+    padding: 6px 10px;
+    text-align: center;
+}
+
+.button-primary:hover {
+    background: #39f;
+}
+
+.button-primary[disabled],
+.button-primary[disabled]:hover {
+    background: #6cf;
+    color: #666;
+    opacity: .8;
+}
+
+.button-warning {
+    background: #f06;
+    border-radius: 4px;
+    color: #fff;
+    padding: 6px 10px;
+    text-align: center;
+}
+
+.button-warning:hover {
+    background: #c06;
+}
+
+.button-warning[disabled],
+.button-warning[disabled]:hover {
+    background: #f06;
+    color: #aaa;
+    opacity: .8;
+}
+
+.button-max {
+  width: 100%;
+}

@@ -1,0 +1,106 @@
+#main {
+  font-family: sans-serif;
+}
+ 
+/* pagination */
+.pagination {
+ background-image:
+    -webkit-radial-gradient(50% 90%, rgba(255,255,255,.1), #fff),
+    -webkit-linear-gradient(rgba(0,0,0,.1), transparent 50%);
+    display: -webkit-box;
+    font-family: aclonica, sans-serif;
+    margin: 80px auto;
+    padding: 1em 0;
+}
+ 
+/* item */
+.pagination-item {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  text-align: center;
+}
+ 
+.pagination-item a 
+{
+  color: #999;
+  display: inline-block;
+  height: 2em;
+  line-height: 2;
+  padding: 2px;
+  position:relative;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+  min-width: 2em;
+}
+ 
+/* selected */
+.pagination-item.selected a {
+  color: #333;
+}
+ 
+.pagination-item.selected a::before
+{
+    border-color: transparent transparent #f03 transparent;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    bottom: -.4em;
+    content:'';
+    height: 0;
+    margin: 0 0 0 -4px;
+    position:absolute;
+    width: 0;
+    }
+    
+/* :hover */
+.pagination-item:not(.selected) a:hover {
+    color: #007bff;
+}
+ 
+/* previous, next */
+.pagination-item-prev,
+.pagination-item-next {
+  -webkit-box-flex: 0.5;
+  -moz-box-flex: 0.5;
+  -o-box-flex: 0.5;
+  -ms-box-flex: 0.5;
+  box-flex: 0.5;
+  font-weight: bold;
+  height: 2em;
+  line-height: 2;
+  text-align: center;
+  text-decoration: none;
+}
+  
+.pagination-item-prev a,
+.pagination-item-next a {
+   background-image:
+    -webkit-linear-gradient(transparent 55%, #6cf 55%, #6cf 70%, transparent 70%);
+  
+  color: #666;
+  display:block;
+  text-decoration:none;
+  -webkit-transition: all .2s;
+}
+ 
+/* :hover */
+.pagination-item-prev a:hover,
+.pagination-item-next a:hover {
+  color: #007bff;
+}
+ 
+
+/* continue text */
+.pagination-item-continue 
+{
+  color:#999;
+  height: 2em;
+  line-height: 2;
+}
+ 

@@ -1,0 +1,106 @@
+#main {
+  font-family: sans-serif;
+}
+ 
+/* contents */
+#contents {
+  color: #333;
+  counter-reset: num;
+  padding: 20px 0;
+  position: relative;
+  text-align: center;
+}
+ 
+/* navi default style */
+.tabs {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+}
+ 
+.tab {
+  border: 1px solid #39f;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  padding: 4px;
+  text-align: center;
+  text-decoration: none;
+  width: 30%;
+}
+ 
+.tab:hover {
+  background: #39f;
+  color: #fff;
+}
+ 
+/* checked style */
+#main1:target,
+#main2:target,
+#main3:target {
+  display: block;
+}
+ 
+#main1:target ~ .tabs .tab[href="#main1"],
+#main2:target ~ .tabs .tab[href="#main2"],
+#main3:target ~ .tabs .tab[href="#main3"] {
+  background: #39f;
+  color: #fff;
+}
+ 
+/* contents area */
+.main {
+  border-top: 1px solid #eee;
+  display: none;
+  margin: 40px 0 0;
+  text-align: left;
+}
+ 
+/* list */
+.item {
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+ 
+.item::before {
+  content: counter(num);
+  counter-increment: num;
+  left: 10px;
+  position: absolute;
+  top: 30px;
+}
+ 
+.item a {
+  color: #333;
+  display: block;
+  overflow: hidden;
+  padding: 10px 35px;
+  text-decoration: none;
+}
+ 
+.item a:hover {
+  background: #f8f8f8;
+}
+ 
+.item-thumbnail {
+  background: #efefef;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  float: left;
+  height: 60px;
+  margin: 0 15px 0 0;
+  width: 60px;
+}
+ 
+.item-title {
+  padding: 2px 0;
+}
+ 
+.item-description {
+  color: #999;
+  font-size: 0.8em;
+}
+ 

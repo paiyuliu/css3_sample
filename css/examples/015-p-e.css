@@ -1,0 +1,55 @@
+#main {
+  font-family: sans-serif;
+}
+ 
+/* progressive enhancement button */
+.button {
+  background: #06f;
+  background: -webkit-linear-gradient(#06f, #03f);
+  background: -moz-linear-gradient(#06f, #03f);
+  background: -o-linear-gradient(#06f, #03f);
+  background: -ms-linear-gradient(#06f, #03f);
+  background: linear-gradient(#06f, #03f);
+  border: 1px solid #06c;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  color: #f8f8f8;
+  display: block;
+  font-size: 2em;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #03c;
+  max-width: 3em;
+  text-align: center;
+  padding: 10px 15px;
+}
+ 
+/* for example */
+.button {
+  margin: 20px auto;
+}
+
+
+
+.button 
+{
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+     border-radius: 2px;
+}
+
+.aaa
+{
+    margin: 10px 5px 30px 20px;/* top | right | bottom | left */
+    margin: 10px 0 20px;/* top | right, left | bottom */
+    padding: 10px auto;/* top | right, left | bottom */
+    padding: 10px;/* all */
+    border: 1px solid #ccc; /* border-width | border-style | border-color */
+    }
+
+
+
+

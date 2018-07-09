@@ -1,0 +1,33 @@
+#main {
+  font-family: sans-serif;
+}
+ 
+/* opacity */
+.photo-list {
+  background: #000;
+  overflow: hidden;
+}
+ 
+.photo-item {
+  float: left;
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  width: 33%;
+}
+ 
+.photo-item:hover {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+ 
+.photo-item img {
+  width: 100%;
+}
+ 

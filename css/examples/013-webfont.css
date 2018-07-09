@@ -1,0 +1,54 @@
+#main {
+  font-family: sans-serif;
+}
+ 
+/* box styles */
+.box-example {
+  margin: 10px 20px;
+}
+ 
+/* Web font */
+.webfont-basic {
+  color: #9f3;
+  font-size: 4em;
+}
+ 
+.font-text-me-one {
+  font-family: 'Text Me One', sans-serif;
+}
+ 
+.font-kaushan-script {
+  font-family: kaushan-script, cursive;
+}
+ 
+.font-aclonica {
+  font-family: aclonica, serif;
+}
+ 
+.font-fontelico {
+  font-family: 'fontelico', sans-serif;
+}
+ 
+ 
+.border-radius
+{
+    border: 6px solid #ccc;
+    -o-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.box-shadow
+{
+    -o-box-shadow: 1px 1px 20px rgba(0,0,0,.2);
+    -moz-box-shadow: 1px 1px 20px rgba(0,0,0,.2);
+    -ms-box-shadow: 1px 1px 20px rgba(0,0,0,.2);
+    -webkit-box-shadow: 1px 1px 20px rgba(0,0,0,.2);
+    box-shadow: 1px 1px 20px rgba(0,0,0,.4);
+}
+    
+    
+    
+

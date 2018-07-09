@@ -1,0 +1,69 @@
+.item {
+  margin: 30px;
+  width: 100px;
+  display: inline-block;
+}
+
+.title {
+  margin: 2px 0;
+}
+
+.photo {
+  width: 100px;
+}
+
+/*  filters */
+.grayscale {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.sepia {
+  -webkit-filter: sepia(1);
+  filter: sepia(1);
+}
+
+.saturate {
+  -webkit-filter: saturate(3.6);
+  filter: saturate(3.6);
+}
+
+.hue-rotate {
+  -webkit-filter: hue-rotate(300deg);
+  filter: hue-rotate(300deg);
+}
+
+.invert {
+  -webkit-filter: invert(.8);
+  filter: invert(.8);
+}
+
+.opacity {
+  -webkit-filter: opacity(0.6);
+  filter: opacity(0.6);
+}
+
+.brightness {
+  -webkit-filter: brightness(1.5);
+  filter: brightness(1.5);
+}
+
+.contrast {
+  -webkit-filter: contrast(2.2);
+  filter: contrast(2.2);
+}
+
+.blur {
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+
+.drop-shadow {
+  -webkit-filter: drop-shadow(1px 0 15px rgba(0,0,0,0.2));
+  filter: drop-shadow(1px 0 15px rgba(0,0,0,0.2));
+}
+
+.edited {
+  -webkit-filter: brightness(0.9) contrast(1.3) saturate(1.5);
+  filter: brightness(0.9) contrast(1.3) saturate(1.5);
+}

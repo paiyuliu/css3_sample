@@ -1,0 +1,79 @@
+#main {
+  font-family: sans-serif;
+}
+ 
+/* common styles */
+.box {
+  border: 1px solid #ccc;
+  height: 200px;
+  margin: 20px;
+  position: relative;
+  width: 300px;
+}
+ 
+.title {
+  font-size: 5em;
+  position: absolute;
+  line-height: 1;
+  margin-top: -0.5em;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+ 
+/* boxes */
+.box4 {
+  background-color: #6cf;
+  background-image: -webkit-linear-gradient(#6cf 0, #cff 100%);
+  background-image: -moz-linear-gradient(#6cf 0, #cff 100%);
+  background-image: -o-linear-gradient(#6cf 0, #cff 100%);
+  background-image: -ms-linear-gradient(#6cf 0, #cff 100%);
+  background-image: linear-gradient(#6cf 0, #cff 100%);
+}
+ 
+.box4 .title {
+  color: rgba(255,255,255,0);
+  font-family: 'chango', sans-serif;
+  font-size: 4em;
+  text-shadow: 0 0 10px rgba(255,255,255,0.7), 0 0 30px rgba(255,255,255,0.5), 0 0 50px rgba(255,255,255,0.4), 0 0 200px rgba(255,255,255,0.3);
+}
+ 
+.box5 {
+  background: #f30;
+}
+ 
+.box5 .title {
+  color: #fff;
+  font-family: 'Freckle Face', cursive;
+  font-weight: bold;
+  text-shadow: 0 -1px 5px #fff, 0 -5px 10px #ff0, 0 -10px 25px #f80, 0 -20px 50px #f00;
+}
+ 
+.box6 {
+  background-color: #000;
+  background-image: -webkit-radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%), -webkit--webkit-radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%);
+  background-image: -moz-radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%), -webkit--moz-radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%);
+  background-image: -o-radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%), -webkit--o-radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%);
+  background-image: -ms-radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%), -webkit--ms-radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%);
+  background-image: radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%), -webkit-radial-gradient(50% 40%, rgba(153,51,153,0.4) 20%, transparent 100%);
+}
+ 
+.box6 .title {
+  color: #fff;
+  font-family: pt-sans-narrow, sans-serif;
+  letter-spacing: 0.15em;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff3ba1, 0 0 40px #ff3ba1, 0 0 50px #ff3ba1, 0 0 80px #ff3ba1;
+}
+ 
+.box7 {
+  background-color: #f6f;
+}
+ 
+.box7 .title {
+  color: #f3c;
+  font-family: Varela, sans-serif;
+  font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 0 0 60px rgba(255,255,255,0.8), 0 0 30px rgba(255,255,255,0.8), 0 0 10px rgba(255,255,255,0.8);
+}
+ 

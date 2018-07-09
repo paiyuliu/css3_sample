@@ -1,0 +1,39 @@
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* text */
+.text {
+    font-size: 6.5em;
+    cursor: pointer;
+}
+
+/* transition */
+.text {
+    transition-property: font-size;
+    transition-duration: .4s;
+    transition-timing-function: ease;
+    transition-delay: .1s;
+}
+
+.text {
+    transition: font-size .4s ease .1s;
+}
+
+
+/* part1 */
+.part1 {
+    color: #f36;
+}
+.part1:hover {
+    font-size: 10em;
+}
+
+/* part2 */
+.part2 {
+    color: #355E95;
+}
+.part2.move {
+    font-size: 10em;
+}

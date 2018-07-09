@@ -1,0 +1,61 @@
+.box {
+    /* background: -webkit-linear-gradient(top, rgba(0,0,0,0) 98%, #6cf); */
+    border-bottom: 2px solid #6cf;
+    box-sizing: border-box;
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+.ball {
+    background: #f36;
+    border-radius: 10px;
+    height: 20px;
+    left: 50%;
+    margin: 0 0 0 -10px;
+    position: absolute;
+    top: 0;
+    width: 20px;
+}
+
+.ball.start {
+    -webkit-animation-name: fall;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 2;
+    -webkit-animation-direction: alternate;
+}
+
+
+@-webkit-keyframes fall {
+    from {
+        top: 0;
+    }
+    99% {
+        -webkit-transform: scale(1, .9);
+    }
+    to {
+        top: 81px;
+        -webkit-transform: scale(1, .9);
+    }
+}
+
+.star {
+    position: absolute;
+    right:0;
+    width: 1em;
+}
+.star {
+    -webkit-animation-name: shooting-star;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes shooting-star {
+    from {
+        -webkit-transform: rotate(0);
+    }
+    to {
+        left: 0;
+        -webkit-transform: rotate(-360deg);
+    }
+}

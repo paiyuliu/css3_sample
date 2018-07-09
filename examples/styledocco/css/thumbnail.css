@@ -1,0 +1,103 @@
+/*
+# thumbnail
+縮圖使用thumbnail類別。
+除單獨使用thumbnail之外還可以合併使用控制大小的類別。
+當沒有指定圖片時以灰色的背景色顯示。
+
+    <img src="picture.png" class="thumbnail thumbnail-medium">
+    <div class="thumbnail thumbnail-medium"></div>
+
+做為選項有下面的類別可以使用。
+
+## 形狀
+* thumbnail-square 直角方形效果縮圖
+
+    <div class="thumbnail thumbnail-medium thumbnail-square"></div>
+
+
+## 大小
+* thumbnail-large 100px的縮圖。
+* thumbnail-medium 60px的縮圖。
+* thumbnail-small 40px的縮圖。
+
+
+    <div class="thumbnail thumbnail-large"></div>
+    <div class="thumbnail thumbnail-medium"></div>
+    <div class="thumbnail thumbnail-small"></div>
+
+
+## 類型
+設定類型，也可以設定如果沒有插入圖片時的預設值。
+* thumbnail-user 顯示人形圖示。
+* thumbnail-app 顯示應用程式圖示。
+
+
+    <div class="thumbnail thumbnail-medium thumbnail-user"></div>
+    <div class="thumbnail thumbnail-medium thumbnail-app"></div>
+
+
+## On-line
+在右下角顯示On-line圖示。
+* thumbnail-online 顯示on-line(綠色圓形)圖示。
+* thumbnail-offline 顯示off-line(灰色圓形)圖示。
+
+
+    <div class="thumbnail thumbnail-medium thumbnail-online"></div>
+    <div class="thumbnail thumbnail-medium thumbnail-offline"></div>
+
+*/
+
+.thumbnail {
+  background-color: #ccc;
+  border: 1px solid #aaa;
+  border-radius: 4px; /* default style */
+}
+
+.thumbnail-square {
+  border-radius: 0;
+}
+
+.thumbnail-large {
+  background-size: 100px 100px;
+  height: 100px;
+  width: 100px;
+}
+.thumbnail-medium {
+  background-size: 60px 60px;
+  height: 60px;
+  width: 60px;
+}
+.thumbnail-small {
+  background-size: 40px 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.thumbnail-user {
+  background-image: url(/public/img/thumb_user.png);
+}
+.thumbnail-app {
+  background-image: url(/public/img/thumb_app.png);
+}
+
+.thumbnail-online,
+.thumbnail-offline {
+  position: relative;
+}
+.thumbnail-online::after,
+.thumbnail-offline::after {
+  border-radius: 7px;
+  bottom: 1px;
+  content: "";
+  display: block;
+  height: 14px;
+  position: absolute;
+  right: 1px;
+  width: 14px;
+}
+.thumbnail-online::after {
+  background-color: #4dac26;
+}
+.thumbnail-offline::after {
+  background-color: #eee;
+}
